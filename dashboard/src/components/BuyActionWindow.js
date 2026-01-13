@@ -83,7 +83,7 @@ const BuyActionWindow = ({ uid }) => {
 
   const handleBuyClick = () => {
     console.log("✅ BUY BUTTON CLICKED");
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("https://zerodha-backend-h8bj.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
